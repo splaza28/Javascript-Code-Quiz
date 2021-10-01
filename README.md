@@ -17,5 +17,5 @@ The Javascript Code Quiz has been designed with the purpose of testing the user 
 
 * GitHub Repository-https://github.com/splaza28/Javascript-Code-Quiz.git
 
-* Application URL-https://splaza28.github.io/Password-Generator/
+* Application URL-https://splaza28.github.io/Javascript-Code-Quiz/
 
