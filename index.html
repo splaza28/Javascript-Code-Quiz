@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript Code Quiz</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+    <header>
+        <span class="timer">Time remaining: <span id="timer">0</span></span>
+  
+    </header>
+
+    <section>
+
+    <h1 id="title">
+        Javascript Code Quiz!
+    </h1>
+
+    <div class="controls">
+        <button type="button" id="start-btn" class="btn start-btn">Start</button>
+        <button type="button" id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+   <!-- Rules for the game-->
+    <div class="container" id="intro">
+        <div class="introduction">
+            <h2>RULES</h2>
+        </div>
+        <div class="container-list">
+              <ul>
+                <li> 1. Quiz and timer will begin when start button is clicked.</li> 
+                <li> 2. Timer will begin with 90 seconds, 10 seconds will be deducted for every wrong answer. </li>
+                <li> 3. Once a question is answered, the next question will appear.</li>
+                <li> 4. Quiz will be over once all questions are answered or when the timer reaches 0.</li>
+                <li> 5. Once the quiz is over, player may save initials and score.</li>
+            </ul>
+            <span>Lets Begin!</span>
+        </div>
+    </div>
+
+        <!--Quiz game section-->
+
+
+<div class="hidden-container" id="game">
+    <div id="questions-container">
+        <h2 id="question">Questions</h2>
+        <div class="choice-container">
+            <p class="choice-prefix">A</p> 
+            <p class="choice-text" data-number="1"> choice 1</p>
+    </div>
+    <div class="choice-container">
+        <p class="choice-prefix">B</p> 
+        <p class="choice-text" data-number="2"> choice 2</p>
+    </div>
+    <div class="choice-container">
+        <p class="choice-prefix">C</p> 
+        <p class="choice-text" data-number="3"> choice 3</p>
+        </div>
+        </div>
+    </div>
+</div>
+    
+<!--Scores and user info-->
+<div class="hidden-container" id="final-score"> 
+    <a href="./end.html">View Highscores</a>
+    <div id="complete">
+        <h3>Game Over!</h3>
+        <span class="score">Your final score is: <span id="answers">0</span></span>
+        <form id="form-group">
+            <label for="name">Type your name: </label>
+            <input type="text" id="user">
+            <button type="button" class="btn submitBtn" id="submit-btn">Submit Score</button>
+        </form>
+    </div>
+</div>
+</section>
+
+
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javscript" src="end.js"></script>
+</body>
+</html>
